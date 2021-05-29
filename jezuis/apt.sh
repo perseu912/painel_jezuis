@@ -7,7 +7,7 @@ sudo apt upgrade -f -y
 sudo apt dist-upgrade -y
 echo ' baixando as ferramentas importantes do python3 ... \n' 
 
-sudo apt install jupyter-notebook 
+sudo apt install jupyter-notebook -y
 sudo apt install python3-qutip -y
 sudo apt install python3-osmnx -y 
 sudo apt install python3-numpy -y
@@ -22,7 +22,11 @@ pip3 install osmnx==1.0.1
 pip3 install mechanicalsoup
 pip3 install beautifulsoup4
 pip3 install geopy
-pip3 install nbconvert
+sudo pip3 install nbconvert
+sudo pip3 install tensorflow
+sudo pip3 install keras
+sudo pip3 install sklearn
+sudo pip3 install opencv-python
 
 echo 'atualizA todas as bibliotecas do pip..'
 pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U

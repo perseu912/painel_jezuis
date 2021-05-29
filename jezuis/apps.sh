@@ -18,10 +18,10 @@ sudo add-apt-repository ppa:otto-kesselgulasch/gimp
 sudo apt update
 sudo apt install gimp -y
 sudo apt install avidemux -y
-sudo apt install openshot
-sudo apt install kdenlive
+sudo apt install openshot -y
+sudo apt install kdenlive -y
 sudo wget -O light.deb 'https://cdn.lwks.com/releases/2021.2.1/lightworks_2021.2_r128456.deb'
-sudo dpkg -i light.deb && sudo rm light.deb 
+sudo dpkg -i ./light.deb && sudo rm light.deb 
 
 echo 'instalando o OBS Studio...'
 sudo apt-get install ffmpeg -y
@@ -51,12 +51,12 @@ echo 'instalando o vs code ...'
 sudo dpkg -i ./vs.deb && sudo rm vs.deb
 
 
-sudo wet -O chrome.deb 'https://www.google.com/chrome/thank-you.html?platform=linux&statcb=0&installdataindex=empty&defaultbrowser=0#'
+sudo wet -O chrome.deb 'https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb'
 echo 'instalando o Chrome...'
-sudo dpkg -i chrome.deb && sudo rm chrome.deb
+sudo dpkg -i chrome.deb && sudo   rm chrome.deb
 
 
 sudo apt upgrade -f -y
 sudo apt dist-upgrade -y
-sudo apt autoremove
+sudo apt autoremove -y
 #echo 'tudo pronto!'
