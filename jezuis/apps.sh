@@ -51,10 +51,11 @@ echo 'instalando o vs code ...'
 sudo dpkg -i ./vs.deb && sudo rm vs.deb
 
 
-sudo wet -O chrome.deb 'https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb'
+sudo wget -O chrome.deb 'https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb'
 echo 'instalando o Chrome...'
 sudo dpkg -i chrome.deb && sudo   rm chrome.deb
 
+sudo wget -O etcher.zip 'https://github-releases.githubusercontent.com/45055693/f1649b00-b28c-11eb-91ac-e898cbc496ed?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210529%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210529T173715Z&X-Amz-Expires=300&X-Amz-Signature=efb366bda5b54d560d2c59f5e1ac89b48bdb12fac55fd31f99da4ad21a4ecd26&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=45055693&response-content-disposition=attachment%3B%20filename%3Dbalena-etcher-electron-1.5.120-linux-x64.zip&response-content-type=application%2Foctet-stream'
 
 sudo apt upgrade -f -y
 sudo apt dist-upgrade -y
